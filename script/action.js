@@ -4,6 +4,9 @@ $('header nav li').click(function () {
     $(this).addClass('on').siblings().removeClass('on')
 })
 
+$('.mo_gnbbox li').click(function () {
+    $(this).addClass('on').siblings().removeClass('on')
+})
 /* $('header nav li').eq(1).click(function () {
     $('html').animate({ scrollTop: '2000px' })
 })
@@ -12,15 +15,33 @@ $('header nav li').eq(2).click(function () {
     $('html').animate({ scrollTop: '3000px' })
 }) */
 
+$('header .hamburger').click(function () {
+    $('.mo_gnbbox').fadeIn()
+})
+
+$('.mo_gnbbox figure').click(function () {
+    $('.mo_gnbbox').fadeOut()
+})
 $('header nav li a').click(function () {
-    var subin = $(this).attr('data-heh')
+    var abc = $(this).attr('data-heh')
 
-    console.log(subin) //첫번째 #section1
+    console.log(abc) //첫번째 #section1
 
-    var yeeun = $('.' + subin).offset().top
-    console.log(yeeun)
+    var def = $('.' + abc).offset().top
+    console.log(def)
 
-    $('html').animate({ scrollTop: yeeun })
+    $('html').animate({ scrollTop: def })
+})
+
+$('mo_gnbbox li a').click(function () {
+    var abc = $(this).attr('data-heh')
+
+    console.log(abc) //첫번째 #section1
+
+    var def = $('.' + abc).offset().top
+    console.log(def)
+
+    $('html').animate({ scrollTop: def })
 })
 
 

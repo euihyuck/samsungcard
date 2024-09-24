@@ -27,12 +27,21 @@ header {
     display: flex;
     align-items: center;position: relative;
 }
-.hamburger {position: fixed;width: 70px;height: 70px;right:150px;display: none;z-index: 999;}
+.hamburger {position: fixed;width: 70px;height: 70px;right:150px;display: none;z-index: 999;cursor: pointer;}
 .hamburger > div {position: absolute; width: 70px; height: 10px; background: #000; top:40%}
 
 .hamburger span::before {content: "";position: absolute; width: 70px;height: 10px;background: #000;top:5px}
 
 .hamburger span::after {content: "";position: absolute; width: 70px;height: 10px;background: #000;bottom: 10px;}
+
+.mo_gnbbox {width: 50vw;height: 100%;position: absolute;right:0;z-index: 9999;}
+
+.mo_gnbbox li {height: 150px;font-size: 32px;font-weight: bold;line-height: 150px;text-align: center;border: 1px solid #000;}
+.mo_gnbbox li.on a { color: var(--primary);
+    font-weight: bold;
+    
+}
+.mo_gnbbox figure {position: absolute;top: 30px;left:0px}
 
 header .centerbox {
     display: flex;
@@ -41,7 +50,7 @@ header .centerbox {
 
 
 header h1 {
-    ;
+    
 }
 
 header nav {
@@ -871,13 +880,27 @@ header nav ul li.on a {
     header nav {display:none}
 
     .hamburger {display: block;}
- 
+ .part0 .content li {width: 20vw;height: 20vh;}
+ .part0 .content li figure img {width: 150px;height: 150px;}
+
+ .part2 .content li {width: 20vw;height: 20vh;}
+ #section2 .part4 figure.part4-0 img {width: 300px;height: 300px;}
  
 #section2 .part4 ul {
 
     gap: 12px;
     display: flex;
     flex-wrap: wrap;justify-content: center;
+}
+
+#section2 .part5 ul {
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;justify-content: center;
+}
+#section2 .part8 .part8-1 {margin: 0 auto;}
+#section2 .part10 .content {
+    gap: 50px;
 }
 }
 
