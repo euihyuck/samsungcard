@@ -27,7 +27,7 @@ header {
     display: flex;
     align-items: center;position: relative;
 }
-.hamburger {position: fixed;width: 70px;height: 70px;right:150px;display: none;z-index: 999;cursor: pointer;}
+.hamburger {position: absolute;width: 70px;height: 70px;right:0px;display: none;z-index: 999;cursor: pointer;}
 .hamburger > div {position: absolute; width: 70px; height: 10px; background: #000; top:40%}
 
 .hamburger span::before {content: "";position: absolute; width: 70px;height: 10px;background: #000;top:5px}
@@ -118,11 +118,14 @@ header nav ul li.on a {
 #section1 .content {
     display: flex;
     justify-content: space-between;
+    gap:50px
+   
 }
 
 #section_box #section1 .content li {
 
    width: 100%;
+   
 }
 
 #section_box #section1 .content li figure {
@@ -287,7 +290,8 @@ header nav ul li.on a {
 #section2 .part2 .content {
     display: flex;
     justify-content: center;
-    gap: 57px
+    gap: 57px;
+    flex-wrap: wrap;
 }
 
 #section2 .part2 figure {
@@ -304,7 +308,7 @@ header nav ul li.on a {
 
 #section2 .part2 li {
     text-align: center;
-
+    margin-top: 100px;
     flex-basis: 200px;
     flex-grow: 1;
 
@@ -357,6 +361,11 @@ header nav ul li.on a {
     display: flex;
     justify-content: center;
     gap: 53px
+    ;text-align: center;
+    margin-top: 100px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 #section2 .part3 figure {
@@ -372,7 +381,7 @@ header nav ul li.on a {
 
 #section2 .part3 li {
     text-align: center;
-
+    margin-top: 100px;
     flex-basis: 200px;
     flex-grow: 1
 }
@@ -554,7 +563,7 @@ header nav ul li.on a {
 
 #section2 .centerbox1200 .part6 figure {
 
-    width: 850px;
+    
     margin: 190px auto;
     scale: 1;
     transition: 0.5s;
@@ -679,7 +688,7 @@ header nav ul li.on a {
 }
 
 #section2 .part8 figure {
-    width: 850px;
+   
     margin: 0 auto;
 }
 
@@ -697,7 +706,7 @@ header nav ul li.on a {
 
 #section2 .part8 .part8-1 {
     font-size: 24px;
-    width: 850px;
+   
     height: 200px;
     background: #6773FE;
     border-radius: 15px;
@@ -713,6 +722,7 @@ header nav ul li.on a {
     box-sizing: border-box;
     padding-top: 50px;
     padding-left: 30px
+    ;margin-top: 50px;
 }
 
 #section2 .part8 p span {
@@ -723,7 +733,8 @@ header nav ul li.on a {
 #section2 .part9 .content {
     display: flex;
     justify-content: center;
-    gap: 57px
+    gap: 57px;
+    flex-wrap: wrap;
 }
 
 #section2 .part9 h3 {
@@ -849,7 +860,12 @@ header nav ul li.on a {
 #section2 .part11 .content {
     display: flex;
     justify-content: center;
-    gap: 57px
+    gap: 53px
+    ;text-align: center;
+    margin-top: 100px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
 
 #section2 .part11 figure {
@@ -880,28 +896,37 @@ header nav ul li.on a {
     header nav {display:none}
 
     .hamburger {display: block;}
- .part0 .content li {width: 20vw;height: 20vh;}
- .part0 .content li figure img {width: 150px;height: 150px;}
-
- .part2 .content li {width: 20vw;height: 20vh;}
- #section2 .part4 figure.part4-0 img {width: 300px;height: 300px;}
  
+ #section2 .part1 figure img {width: 300px;height: 300px;}  
+ .part1 .cont {display: none;}
+ .part2 .content li {width: 20vw;height: 20vh;}
+ .part3 .content li {width: 20vw;height: 20vh;}
+ .part2 .content {gap:50px}
+ #section2 .part4 figure.part4-0 img {width: 300px;height: 300px; margin-top: 100px;}
+ .part3 {margin-top: 500px;}
 #section2 .part4 ul {
 
-    gap: 12px;
+    gap: 50px;
     display: flex;
     flex-wrap: wrap;justify-content: center;
 }
 
 #section2 .part5 ul {
-    gap: 12px;
+    gap: 50px;
     display: flex;
     flex-wrap: wrap;justify-content: center;
 }
+.part6 figure {width: 300px;}
+.part6 figure img {width: 300px;height: 300px;}
+.part6 .cont {display: none;}
+.part7 .content {gap:0px;}
+.part7 .content li {}
 #section2 .part8 .part8-1 {margin: 0 auto;}
+.part8 figure img {width: 300px;height: 300px;}
 #section2 .part10 .content {
     gap: 50px;
 }
+
 }
 
 @media screen and (max-width: 978px) {
@@ -913,4 +938,15 @@ header nav ul li.on a {
         flex-wrap: wrap;justify-content: center;
     }
     #section2 .part4 ul li {width: 150px;}
+}
+
+
+@media screen and (max-width: 640px) {
+    #section1 .content {flex-wrap: wrap;}
+    #section .part2 .content li {width: 40%;}
+    #section .part3 .content li {width: 40%;}
+    #section .part3 .content li img {width: 100%;}
+    #section .part7 .content li img {width: 100%;}
+    #section2 .part9 li {width: 40%;}
+    #section2 .part9 li img {width: 100%;}
 }
