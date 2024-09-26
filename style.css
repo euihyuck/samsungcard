@@ -641,7 +641,8 @@ header nav ul li.on a {
 #section2 .part7 .content {
     display: flex;
     justify-content: center;
-    gap: 57px
+    gap: 57px;
+    flex-wrap: wrap;
 }
 
 #section2 .part7 figure {
