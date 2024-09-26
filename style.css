@@ -946,8 +946,9 @@ header nav ul li.on a {
     #section1 .content {flex-wrap: wrap;}
     #section .part2 .content li {width: 40%;}
     #section .part3 .content li {width: 40%;}
+    #section2 .part7 .content li {width: 40%;}
     #section .part3 .content li img {width: 100%;}
     #section .part7 .content li img {width: 100%;}
     #section2 .part9 li {width: 40%;}
-    #section2 .part9 li img {width: 100%;}
+  
 }
